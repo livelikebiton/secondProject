@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Currency</title>
+    <link rel="shortcut icon" href="assets/images/iconfinder_etherium_classic_etc_coin_mining_2844385.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <section class="container">
+
+        <header class="row">
+            <div class="display-4">
+                Crypto Currency
+            </div>
+        </header>
+
+        <nav class="nav navMenu">
+            <a class="nav-link active coin" aria-current="page" href="#">HOME</a>
+            <a class="nav-link realTime" href="#">REAl TIME</a>
+            <a class="nav-link about" href="#">ABOUT</a>
+            <div class="input-group mb-3 navSearch">
+                <input type="text" class="form-control searchInput" placeholder="search" />
+                <button class="btn btn-outline-primary searchButton">SEARCH</button>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="container-ml d-flex flex-wrap firstContainer"></div>
+            <div id="chartContainer"></div>
+        </main>
+
+        <div class="spinner-border spinner" role="status">
+            <span class="visually-hidden spinner">Loading...</span>
+        </div>
+
+        <footer>All The Copyright Belongs To Maayan Biton.<br>
+            thanks to <a href="https://api.coingecko.com/api/v3/coins/list" target="_blank">Crypto Currency</a> site for
+            the info, <br>
+            thanks to <a href="https://www.iconfinder.com/" target="_blank">finder</a> site for the icon, <br>
+            thanks to <a href="https://www.google.com/" target="_blank">google</a> site for the logo, <br>
+            this site is built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> . <br>
+        </footer>
+
+    </section>
+
+    <div class="modal fade" id="moreThenFiveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">you have more then five</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body coinsModal">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary saveButton">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
